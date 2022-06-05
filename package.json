@@ -19,7 +19,8 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "pnpm build || ( npm install pnpm && pnpm build )",
+        "prebuild": "pnpm build || ( npm install pnpm && pnpm build )",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
